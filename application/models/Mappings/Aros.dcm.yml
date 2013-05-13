@@ -1,0 +1,40 @@
+Aros:
+  type: entity
+  table: aros
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    parentId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: parent_id
+    model:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    foreignKey:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: foreign_key
+    alias:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    lft:
+      type: integer
+      unsigned: false
+      nullable: true
+    rght:
+      type: integer
+      unsigned: false
+      nullable: true
+  lifecycleCallbacks: {  }

@@ -1,0 +1,31 @@
+Entities\Menu:
+  type: entity
+  table: menu
+  fields:
+    menuId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: menu_id
+      generator:
+        strategy: IDENTITY
+    menuSegment:
+      type: string
+      length: 512
+      fixed: false
+      nullable: false
+      column: menu_segment
+    menuName:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+      column: menu_name
+    menuRoles:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+      column: menu_roles
+  lifecycleCallbacks: {  }

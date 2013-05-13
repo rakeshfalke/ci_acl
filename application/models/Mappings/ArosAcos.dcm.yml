@@ -1,0 +1,46 @@
+ArosAcos:
+  type: entity
+  table: aros_acos
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    aroId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: aro_id
+    acoId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: aco_id
+    create:
+      type: string
+      length: 2
+      fixed: false
+      nullable: false
+      column: _create
+    read:
+      type: string
+      length: 2
+      fixed: false
+      nullable: false
+      column: _read
+    update:
+      type: string
+      length: 2
+      fixed: false
+      nullable: false
+      column: _update
+    delete:
+      type: string
+      length: 2
+      fixed: false
+      nullable: false
+      column: _delete
+  lifecycleCallbacks: {  }
